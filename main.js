@@ -20,8 +20,7 @@ function adicionarLinha(){
     } else {
         nomes.push (inputNome.value)
         telefones.push(Number(inputNome.value))
-    }
-
+        
     let linha = `<tr>`
     linha += `<td>${inputNome.value}</td>`
     linha += `<td>${inputTelefone.value}</td>`
@@ -31,6 +30,8 @@ function adicionarLinha(){
 
     inputNome.value = ''
     inputTelefone.value = ''
+    }
+
 }
 
 function atualizaTabela (){
